@@ -1,0 +1,58 @@
+/**
+ * Solarized Dark theme for reveal.js.
+ * Author: Achim Staebler
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,700italic,800italic,300,300italic,400italic,600italic,600);
+
+/**
+ * Solarized colors by Ethan Schoonover
+ */
+html * {
+	color-profile: sRGB;
+	rendering-intent: auto;
+}
+
+$base03:    #444C63;
+$base02:    lighten($base03, 20%);
+$base01:    darken($base03, 20%);
+$base00:    $base03;
+$base0:     $base03;
+$base1:     #fff;
+$base2:     #fff;
+$base3:     #fff;
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+// Main text
+$mainFont: 'Open Sans', sans-serif;
+
+// Headings
+$headingFont: 'Open Sans', sans-serif;
+
+// Override theme settings (see ../template/settings.scss)
+$mainColor: $base1;
+$headingColor: $base2;
+$headingTextShadow: none;
+$backgroundColor: $base03;
+$linkColor: #00b5f9;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: $magenta;
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
